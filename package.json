@@ -1,0 +1,20 @@
+{
+  "name": "azipa-docs-hub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Multi-project VitePress documentation hub for AZiPA's GitHub repositories",
+  "scripts": {
+    "dev": "vitepress dev --host 0.0.0.0 --port 8080",
+    "build": "vitepress build",
+    "preview": "vitepress preview --host 0.0.0.0 --port 8080"
+  },
+  "devDependencies": {
+    "@fontsource/ibm-plex-mono": "^5.2.5",
+    "@fontsource/ibm-plex-sans": "^5.2.6",
+    "@fontsource/vazirmatn": "^5.2.5",
+    "mermaid": "^11.12.0",
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  }
+}
