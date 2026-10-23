@@ -1,0 +1,98 @@
+@import "@fontsource/ibm-plex-sans/400.css";
+@import "@fontsource/ibm-plex-sans/500.css";
+@import "@fontsource/ibm-plex-sans/600.css";
+@import "@fontsource/ibm-plex-sans/700.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+@import "@fontsource/vazirmatn/400.css";
+@import "@fontsource/vazirmatn/500.css";
+@import "@fontsource/vazirmatn/600.css";
+@import "@fontsource/vazirmatn/700.css";
+
+:root {
+  --vp-font-family-base: "IBM Plex Sans", "Vazirmatn", ui-sans-serif, system-ui, sans-serif;
+  --vp-font-family-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --vp-c-brand-1: #0f766e;
+  --vp-c-brand-2: #115e59;
+  --vp-c-brand-3: #0d9488;
+  --vp-c-brand-soft: rgba(15, 118, 110, 0.14);
+  --vp-nav-height: 64px;
+}
+
+.dark {
+  --vp-c-brand-1: #5eead4;
+  --vp-c-brand-2: #2dd4bf;
+  --vp-c-brand-3: #99f6e4;
+  --vp-c-brand-soft: rgba(45, 212, 191, 0.16);
+}
+
+html[lang="fa-IR"] {
+  --vp-font-family-base: "Vazirmatn", "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+html[lang="fa-IR"] body {
+  line-height: 1.75;
+}
+
+.VPNavBarTitle .title {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.VPHero .name,
+.VPHero .text {
+  background: none !important;
+  -webkit-text-fill-color: var(--vp-c-text-1) !important;
+  letter-spacing: -0.03em;
+}
+
+.VPHero .tagline {
+  line-height: 1.55;
+  max-width: 40rem;
+}
+
+.vp-doc h1 {
+  letter-spacing: -0.03em;
+}
+
+.vp-doc :is(p, li) {
+  line-height: 1.65;
+}
+
+html[lang="fa-IR"] .vp-doc :is(p, li, td, th) {
+  line-height: 1.85;
+}
+
+/* Persian pages are RTL. Code, diagrams, and paths stay LTR so
+   tokens, regexes, and <code> do not mirror. */
+html[dir="rtl"] .vp-doc div[class*="language-"],
+html[dir="rtl"] .vp-doc .vp-code-group,
+html[dir="rtl"] .vp-doc pre,
+html[dir="rtl"] .vp-doc code,
+html[dir="rtl"] .vp-doc kbd,
+html[dir="rtl"] .vp-doc samp,
+html[dir="rtl"] .mermaid,
+html[dir="rtl"] .vp-doc .mermaid {
+  direction: ltr;
+  unicode-bidi: isolate;
+  text-align: left;
+}
+
+html[dir="rtl"] .vp-doc :not(pre) > code {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-inline: 0.15em;
+}
+
+html[dir="rtl"] .vp-doc div[class*="language-"] span.lang {
+  direction: ltr;
+}
+
+html[dir="rtl"] .vp-doc table {
+  text-align: right;
+}
+
+html[dir="rtl"] .vp-doc td code,
+html[dir="rtl"] .vp-doc th code {
+  text-align: left;
+}
